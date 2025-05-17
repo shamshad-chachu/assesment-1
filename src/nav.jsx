@@ -1,11 +1,12 @@
 import './nav.css'
 import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
 import Home from './home.jsx'
+import About from './about.jsx'
 function nav() {
   return (
     <Router>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <h2 class='col ms-5 text-info'>React Developer</h2>
+      <h2 class='col ms-5 text-info nav-h2'>React Developer</h2>
   <div class="container-fluid col justify-content-end me-4">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -16,10 +17,10 @@ function nav() {
       <Link to='/' class='list'>
         Home
         </Link>
-        <Link to='/' class='list'>
+        <Link to='/About' class='list'>
         About
         </Link>
-        <Link to='/home' class='list'>
+        <Link to='/' class='list'>
         Contact
         </Link>
         <Link to='/home' class='list'>
@@ -28,18 +29,6 @@ function nav() {
         <Link to='/home' class='list'>
         Page
         </Link>
-        {/* <li class="nav-item ">
-          <a class="list" aria-current="page" href="#">About</a>
-        </li>
-        <li class="nav-item ">
-          <a class="list" aria-current="page" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="list" aria-current="page" href="#">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="list" aria-current="page" href="#">Page</a>
-        </li> */}
         <li class="nav-item p-0" >
         <button type="button" class="px-3 rounded-pill fs-5 bg-info text-dark border-3 border-dark">Join class</button>
         </li>
@@ -49,6 +38,10 @@ function nav() {
 </nav>
 <Routes>
   <Route path='/' element={<Home/>}></Route>
+  <Route path='/About' element={<About/>}></Route>
+  <Route path='/' element={<Home/>}></Route>
+  <Route path='/' element={<Home/>}></Route>
+
 </Routes>
 {/* <Home/> */}
 </Router>

@@ -1,14 +1,14 @@
-.row{
+.home{
   background-color: aqua;
   font-family: monospace;
   width: 100%;
 }
-h3{
+.home-h3{
   font-size: 1.3rem;
 }
-button{
+.home-button{
   background-color: rgb(63, 2, 63);
 }
-img{
-  width: 25rem;
+.home-img{
+  width: 23rem;
 }

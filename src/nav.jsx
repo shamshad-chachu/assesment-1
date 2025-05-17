@@ -1,6 +1,9 @@
 import './nav.css'
+import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
+import Home from './home.jsx'
 function nav() {
   return (
+    <Router>
     <nav class="navbar navbar-expand-lg navbar-light">
       <h2 class='col ms-5 text-info'>React Developer</h2>
   <div class="container-fluid col justify-content-end me-4">
@@ -9,10 +12,23 @@ function nav() {
     </button>
     <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
       <ul class="navbar-nav gap-5 fs-4 d-flex align-items-center me-3">
-        <li class="nav-item ">
-          <a class="list" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item ">
+       
+      <Link to='/' class='list'>
+        Home
+        </Link>
+        <Link to='/' class='list'>
+        About
+        </Link>
+        <Link to='/home' class='list'>
+        Contact
+        </Link>
+        <Link to='/home' class='list'>
+        Gallery
+        </Link>
+        <Link to='/home' class='list'>
+        Page
+        </Link>
+        {/* <li class="nav-item ">
           <a class="list" aria-current="page" href="#">About</a>
         </li>
         <li class="nav-item ">
@@ -23,7 +39,7 @@ function nav() {
         </li>
         <li class="nav-item">
           <a class="list" aria-current="page" href="#">Page</a>
-        </li>
+        </li> */}
         <li class="nav-item p-0" >
         <button type="button" class="px-3 rounded-pill fs-5 bg-info text-dark border-3 border-dark">Join class</button>
         </li>
@@ -31,6 +47,11 @@ function nav() {
     </div>
   </div>
 </nav>
+<Routes>
+  <Route path='/' element={<Home/>}></Route>
+</Routes>
+{/* <Home/> */}
+</Router>
   )
 }
 

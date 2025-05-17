@@ -3,7 +3,7 @@
 }
 .list{
   text-decoration: none;
-  color: black;
+  color:black;
 }
 li:hover .list{
   color: blueviolet;

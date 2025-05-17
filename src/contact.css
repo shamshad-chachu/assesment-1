@@ -1,0 +1,32 @@
+.contact-row{
+  background-color: rgb(170, 225, 116);
+  width: 100%;
+  justify-content: space-between;
+  font-family: monospace;
+}
+.contact-button{
+  background-color: rgb(63, 2, 63);
+  color: white;
+}
+.form-container{
+  background-color: rgb(47, 171, 47);
+  width: auto;
+  border-radius: 1.3rem;
+  border: 2px solid black;
+}
+.form{
+  margin: 0;
+}
+.form input{
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-top: 5%;
+}
+.contact-btn{
+  margin-top: 8%;
+  background-color: rgb(4, 4, 99);
+  color: white;
+  border-radius: 8px;
+}

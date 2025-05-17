@@ -4,8 +4,8 @@ import './home.css'
 
 function home() {
   return (
-    <div className="row px-5 py-4 vh-100  home ">
-      <div className="col mt-5">
+    <div className="row px-5 py-4 vh-100  home">
+      <div className="col-12 col-lg-6 mt-5">
       <h3 className='fw-bold mb-4 home-h3'>Kids Learning Center</h3>
       <hr className='my-4'></hr>
         <h1 className='fw-bolder'>New Approach To <br/>Kids Education</h1>
@@ -15,8 +15,8 @@ function home() {
         <button class="border-3 rounded-pill text-light px-3 home-button">Learn More</button>
 
       </div>
-      <div className="col d-flex align-items-center">
-      <img src={img1} alt="" id="img" class='rounded-circle ms-5 home-img' />
+      <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+      <img src={img1} alt="" id="img" class='rounded-circle ms-0 ms-lg-5 home-img'/>
       </div>
     </div>
   )

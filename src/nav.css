@@ -1,0 +1,16 @@
+.navbar{
+  background-color:#cee0fb97;
+}
+.list{
+  text-decoration: none;
+  color: black;
+}
+li:hover .list{
+  color: blueviolet;
+}
+li:active .list{
+  color: blueviolet;
+}
+h2{
+  letter-spacing: .5rem;
+}

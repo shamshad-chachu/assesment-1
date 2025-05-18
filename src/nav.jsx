@@ -5,13 +5,18 @@ import About from './about.jsx'
 import Contact from './contact.jsx'
 import Gallery from './gallery.jsx'
 import Page from './page.jsx'
+import { useState } from 'react'
 function nav() {
+  const [IsMobile,setIsMobile] = useState(false)
+
   return (
     <Router>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <h2 class='col ms-5 text-info nav-h2'>React Developer</h2>
+      {!IsMobile && <h2 class='col ms-5 text-info nav-h2'>React Developer</h2>}
   <div class="container-fluid col justify-content-end me-4">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={()=>{
+      setIsMobile(!IsMobile)
+    }}>
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end " id="navbarNav">

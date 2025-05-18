@@ -4,7 +4,7 @@ import './home.css'
 
 function home() {
   return (
-    <div className="row px-5 py-4 vh-100  home">
+    <div className="row px-5 py-4 max-vh-100  home">
       <div className="col-12 col-lg-6 mt-5">
       <h3 className='fw-bold mb-4 home-h3'>Kids Learning Center</h3>
       <hr className='my-4'></hr>

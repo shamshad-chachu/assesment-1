@@ -4,6 +4,7 @@ import Home from './home.jsx'
 import About from './about.jsx'
 import Contact from './contact.jsx'
 import Gallery from './gallery.jsx'
+import Page from './page.jsx'
 function nav() {
   return (
     <Router>
@@ -28,7 +29,7 @@ function nav() {
         <Link to='/Gallery' class='list'>
         Gallery
         </Link>
-        <Link to='/home' class='list'>
+        <Link to='/Page' class='list'>
         Page
         </Link>
         <li class="nav-item p-0" >
@@ -43,6 +44,8 @@ function nav() {
   <Route path='/About' element={<About/>}></Route>
   <Route path='/Contact' element={<Contact/>}></Route>
   <Route path='/Gallery' element={<Gallery/>}></Route>
+  <Route path='/page' element={<Page/>}></Route>
+
 
 </Routes>
 {/* <Home/> */}
